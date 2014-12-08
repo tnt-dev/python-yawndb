@@ -1,0 +1,45 @@
+.. -*- mode: rst -*-
+
+Python-yawndb
+-------------
+
+Python-yawndb is a client for interacting with `YAWNDB <https://github.com/selectel/yawndb>`_.
+
+YAWNDB is an in-memory circular array database.
+
+Installation
+------------
+
+Download the source and run::
+
+    $ python setup.py install
+
+Dependencies
+------------
+
+- Twisted: event-driven networking engine (http://twistedmatrix.com)
+
+Examples
+--------
+
+Here's a basic example::
+
+    $ python
+
+    >>> import yawndb.sync
+
+    >>> yawndb = yawndb.sync.YAWNDB("127.0.0.1")
+
+    >>> yawndb.start()
+
+    >>> yawndb.send_msgs([("stats", 1010)])
+
+    >>> yawndb.last("stats", "stats", 1)
+
+Testing
+-------
+
+To test python-yawndb run::
+
+    $ pip install -r tests/requirements.txt
+    $ py.test tests/
