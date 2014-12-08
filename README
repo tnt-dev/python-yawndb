@@ -1,7 +1,7 @@
 .. -*- mode: rst -*-
 
-Python-yawndb
--------------
+Python-yawndb |build-status|
+----------------------------
 
 Python-yawndb is a client for interacting with `YAWNDB <https://github.com/selectel/yawndb>`_.
 
@@ -43,3 +43,7 @@ To test python-yawndb run::
 
     $ pip install -r tests/requirements.txt
     $ py.test tests/
+
+.. |build-status| image:: https://travis-ci.org/tnt-dev/python-yawndb.svg?branch=master
+   :target: https://travis-ci.org/tnt-dev/python-yawndb
+   :alt: Build status
